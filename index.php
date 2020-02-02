@@ -76,6 +76,10 @@
         <!-- FORMULARIO -->
         <form action="registrar_pastor.php" method="POST">
         
+       <!-- <div class="form-group">
+        <label for="">I D </label>
+        <input type="number" name="codigo" class="form-control"> 
+        </div>-->
         <div class="form-group">
         <label for="">Carnet</label>
         <input type="number" name="carnet" class="form-control"> 
