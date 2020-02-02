@@ -17,16 +17,16 @@ $estado=$_POST["estado"];
 $fecharetiro=$_POST["fecharetiro"];
 
 $sentencia=$base_de_datos->prepare("INSERT INTO pastor(CARNET,PRIMER_NOMBRE,SEGUNDO_NOMBRE,TERCER_NOMBRE,PRIMER_APELLIDO,SEGUNDO_APELLIDO,DPI,FECHA_NACIMIENTO,TELEFONO,CLASIFICACION,ESTUDIOS_BIBLICOS,ESTUDIOS_SECULARES,INICIO_SERVICIO,ESTADO,FIN_SERVICIO)
-VALUES(:carnet:primernom,:segundonom,:tercernom,:primerape,:segundoape,:dpi,:fechanac,:telefono,:clasificacion,:estudiosbiblicos,:estudiosseculares,:fechainicio,:estado,:fecharetiro);");
+VALUES(:carnet:primernombre,:segundonombre,:tercernombre,:primerapellido,:segundoapellido,:dpi,:fechanacimiento,:telefono,:clasificacion,:estudiosbiblicos,:estudiosseculares,:fechainicio,:estado,:fecharetiro);");
 
 $sentencia->bindParam(':carnet',$carnet);
-$sentencia->bindParam(':primernom',$primernombre);
-$sentencia->bindParam(':segundnom',$segundonombre);
-$sentencia->bindParam(':tercernom',$tercernombre);
-$sentencia->bindParam(':primerape',$primerapellido);
-$sentencia->bindParam(':segundoape',$segundoapellido);
+$sentencia->bindParam(':primernombre',$primernombre);
+$sentencia->bindParam(':segundnombre',$segundonombre);
+$sentencia->bindParam(':tercernombre',$tercernombre);
+$sentencia->bindParam(':primerapellido',$primerapellido);
+$sentencia->bindParam(':segundoapellido',$segundoapellido);
 $sentencia->bindParam(':dpi',$dpi);
-$sentencia->bindParam(':fechanac',$fechanacimiento);
+$sentencia->bindParam(':fechanacimiento',$fechanacimiento);
 $sentencia->bindParam(':telefono',$telefono);
 $sentencia->bindParam(':clasificacion',$clasificacion);
 $sentencia->bindParam(':estudiosbiblicos',$estudiosbiblicos);
